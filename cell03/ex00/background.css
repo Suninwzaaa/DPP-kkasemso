@@ -1,0 +1,20 @@
+/* จัดแต่งปุ่มให้อยู่มุมซ้ายบนหรือตำแหน่งตามตัวอย่างในโจทย์ */
+body {
+    margin: 20px;
+    /* transition ช่วยให้เวลาเปลี่ยนสีมีความนุ่มนวลขึ้น (ใส่เพิ่มได้ถ้าต้องการ) */
+    transition: background-color 0.3s ease;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
