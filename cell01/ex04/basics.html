@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basics</title> <!-- เงื่อนไขข้อ 2: ชื่อแท็บเบราว์เซอร์ -->
+        <style>
+            /* เงื่อนไขข้อ 1: พื้นหลังสีชมพู */
+            body {
+                background-color: pink;
+                margin: 0;
+                padding: 20px;
+            }
+
+            /* เงื่อนไขข้อ 3: หัวข้อสีขาว ตัวใหญ่ อยู่ตรงกลาง และมีอักษรพิเศษ */
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 48px;
+            }
+
+            /* จัดกลุ่มรูปภาพร้านค้าทั้ง 2 รูปให้อยู่ตรงกลางและวางคู่กัน */
+            .shop-container {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                margin-top: 30px;
+            }
+
+            /* จัดรูปแบบแต่ละบล็อกรูปภาพและลิงก์ */
+            .shop-item {
+                text-align: center;
+            }
+
+            .shop-item img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .shop-item a {
+                color: #000;
+                font-family: sans-serif;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .shop-item a:hover {
+                text-decoration: underline;
+            }
+
+            /* เงื่อนไขข้อ 7: ส่วนท้าย (Footer) ชิดขวา, ตัวเอียง, ฟอนต์ Monospace */
+            .footer-info {
+                text-align: right;          /* จัดชิดขวา */
+                font-style: italic;         /* ตัวเอียง */
+                font-family: monospace;     /* ฟอนต์ Monospace */
+                color: #333;
+                margin-top: 40px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- หัวข้อหลัก (มีอักษรพิเศษ ♥ และสีขาวตรงกลาง) -->
+        <h1>Welcome to My Shop </h1>
+
+        <!-- เงื่อนไขข้อ 4 & 5: รูปภาพร้านค้า 2 รูปวางคู่กัน พร้อมลิงก์ใต้รูป -->
+        <div class="shop-container">
+            <!-- ร้านที่ 1 -->
+            <div class="shop-item">
+                <img src="https://i.pinimg.com/1200x/c3/b6/e9/c3b6e968f54ddcfcf778253cfd7fca10.jpg" alt="Shop 1">
+                <br>
+                <a href="https://www.shopee.co.th" target="_blank">Shopee Store</a>
+            </div>
+
+            <!-- ร้านที่ 2 -->
+            <div class="shop-item">
+                <img src="https://i.pinimg.com/1200x/ec/fa/8e/ecfa8e649bed1ca01f018edd13a4491f.jpg" alt="Shop 2">
+                <br>
+                <a href="https://www.lazada.co.th" target="_blank">Lazada Store</a>
+            </div>
+        </div>
+
+        <!-- เงื่อนไขข้อ 6: เส้นคั่นแนวนอน (Horizontal line) -->
+        <hr style="margin-top: 50px; border: 1px solid #fff;">
+
+        <!-- เงื่อนไขข้อ 7: ข้อความท้ายเว็บ (© ล็อกอิน ปี 2026) -->
+        <div class="footer-info">
+            &copy; kkasemso 2026
+        </div>
+
+    </body>
+</html>
