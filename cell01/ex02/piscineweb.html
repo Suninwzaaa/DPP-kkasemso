@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Piscine web</title>
+        <style>
+            /* จัดรูปแบบภาพและข้อความให้แสดงผลแบบ Flexbox วางเรียงกันแนวนอน */
+            .content-container {
+                display: flex;
+                align-items: flex-start; /* จัดให้ชิดด้านบนเสมอกัน */
+                justify-content: center; /* จัดกึ่งกลางหน้าจอ */
+                gap: 20px; /* ระยะห่างระหว่างรูปซ้ายกับขวา */
+                margin-top: 20px;
+            }
+            /* จัดกลุ่มฝั่งขวา ให้ข้อความอยู่เหนือรูปภาพ */
+            .right-column {
+                display: flex;
+                flex-direction: column; /* เรียงข้อความกับรูปเป็นแนวตั้ง */
+            }
+            .right-column p {
+                margin: 0 0 5px 0; /* ระยะห่างด้านล่างของข้อความก่อนถึงรูป */
+                font-family: sans-serif;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Piscine Web</h1>
+        </center>
+
+        <div class="content-container">
+            <!-- รูปฝั่งซ้าย (เช่น รูปแมวหน้าคอม) -->
+            <img src="cat.jpg" alt="Cat meme" width="450">
+
+            <!-- ฝั่งขวา: ข้อความอยู่บน รูปอยู่ล่าง -->
+            <div class="right-column">
+                <p>Programmers while reviewing the codes</p>
+                <img src="meme.jpg" alt="catmeme.jpg" width="250">
+            </div>
+        </div>
+    </body>
+</html>
