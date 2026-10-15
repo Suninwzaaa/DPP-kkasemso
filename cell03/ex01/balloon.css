@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#balloon {
+    width: 200px;
+    height: 200px;
+    background-color: red; /* สีเริ่มต้นเป็นสีแดง */
+    border-radius: 50%;    /* ทำมุมให้เป็นวงกลม */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* ช่วยให้เวลาเปลี่ยนสีมีความนุ่มนวลขึ้น */
+}
