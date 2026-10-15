@@ -1,4 +1,3 @@
-
 const themeBtn = document.getElementById('themeBtn');
 
 themeBtn.addEventListener('click', function() {
@@ -9,7 +8,6 @@ themeBtn.addEventListener('click', function() {
         themeBtn.textContent = 'โหมดสว่าง';
     }
 });
-
 
 const calcBtn = document.getElementById('calcBtn');
 const resultBox = document.getElementById('resultBox');
@@ -23,7 +21,6 @@ calcBtn.addEventListener('click', function() {
         return;
     }
 
-    
     const estimatedCost = days * people * 1500;
 
     resultBox.innerHTML = `ประมาณการค่าใช้จ่ายสำหรับ ${people} คน (${days} วัน):<br><strong>${estimatedCost.toLocaleString()} บาท</strong>`;
