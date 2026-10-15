@@ -1,0 +1,66 @@
+/* ตั้งค่าพื้นฐานเพื่อความสวยงามน่ามองตามที่โจทย์แนะนำ */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* ล้างค่าเริ่มต้นของ List */
+.sncf-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ตกแต่งปุ่มเมนูหลัก (ขนมปังแผ่นบน) */
+.sandwich-baguette {
+    position: relative;
+    background-color: #8b5a2b; /* สีน้ำตาลขนมปังฝรั่งเศส */
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.sandwich-baguette > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ⚙️ ส่วนสำคัญ: ซ่อนเมนูลูก (ไส้แซนด์วิช) ไว้ในตอนแรก */
+.sandwich-ingredients {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+/* ตกแต่งรายการไส้แซนด์วิชด้านใน */
+.sandwich-ingredients li a {
+    display: block;
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+/* เอฟเฟกต์เปลี่ยนสีเมื่อเอาเมาส์ไปชี้แต่ละไส้ */
+.sandwich-ingredients li a:hover {
+    background-color: #ffeaa7; /* สีเหลืองชีสเยิ้มๆ */
+    color: #d35400;
+}
+
+/* ⚙️ ส่วนสำคัญที่สุด: เมื่อ Hover ที่เมนูหลัก ให้แสดงเมนูลูกออกมา (โดยไม่ต้องใช้ JS) */
+.sandwich-baguette:hover .sandwich-ingredients {
+    display: block;
+}
