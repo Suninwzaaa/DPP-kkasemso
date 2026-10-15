@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>It's over 9000</title>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+
+        <div class="calculator-container">
+            <!-- ช่องกรอกตัวเลขฝั่งซ้าย -->
+            <input type="text" id="leftNum" placeholder="Number">
+
+            <!-- ช่องเลือกตัวดำเนินการ (+, -, *, /, %) -->
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+
+            <!-- ช่องกรอกตัวเลขฝั่งขวา -->
+            <input type="text" id="rightNum" placeholder="Number">
+
+            <!-- ปุ่มกดคำนวณ 'Try me!' -->
+            <input type="submit" id="submitBtn" value="Try me!">
+        </div>
+
+        <script src="calc.js"></script>
+    </body>
+</html>
